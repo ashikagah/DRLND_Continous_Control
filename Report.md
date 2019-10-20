@@ -19,7 +19,7 @@ EPSILON = 1.0           # explore->exploit noise process added to act step
 EPSILON_DECAY = 1e-6    # decay rate for noise process
 ```
 
-### Learning Interval [code](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
+### Learning Interval [(code)](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
 The learning timestep interval was set to 20 to avoid slow learning. The algorithm samples experiences from the buffer and learns 10 times.
 
 ```
@@ -27,13 +27,13 @@ LEARN_EVERY = 20        # learning timestep interval
 LEARN_NUM = 10          # number of learning passes
 ```
 
-### Gradient Clipping [code](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
+### Gradient Clipping [(code)](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
 Gradient clipping was used to place an upper limit on the size of the parameter updates.
 
-### Batch Normalization [code](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/model.py)
+### Batch Normalization [(code)](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/model.py)
 Batch normalization was used at the outputs of the first fully-connected layers of both the actor and critic models.
 
-### Experience Replay [code](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
+### Experience Replay [(code)](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
 Experience replay was also implemented.
 
 ## Plot of Rewards
