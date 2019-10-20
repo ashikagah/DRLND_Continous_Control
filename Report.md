@@ -1,11 +1,7 @@
 # Continuous Control
 
 ## Goal
-In this project, I build a reinforcement learning (RL) agent that controls a robotic arm within Unity's [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment. The goal is to get 20 different robotic arms to maintain contact with the green spheres.
-
-A reward of +0.1 is provided for each timestep that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
-
-In order to solve the environment, our agent must achieve a score of +30 averaged across all 20 agents for 100 consecutive episodes.
+To build a deep reinforcement learning agent that controls 20 robotic arms to maintain contact with the green balls. A reward of +0.1 is provided for each timestep when the agent's hand is in contact with the green balls. The environment is considered solved when the agents achive a mean score of +30.
 
 ![Trained Agent][image1]
 
