@@ -40,7 +40,7 @@ Related parameters:
 BATCH_SIZE = 128 # minibatch size
 ```
 ### Exploration
-The DDPG algorithm uses an Ornstein-Uhlenbeck process [Uhlenbeck and Ornstein, 1930](https://journals.aps.org/pr/abstract/10.1103/PhysRev.36.823) to generate temporally correlated exploration for exploration efficiency in physical control problems with inertia.
+The DDPG algorithm uses an Ornstein-Uhlenbeck process ([Uhlenbeck and Ornstein, 1930](https://journals.aps.org/pr/abstract/10.1103/PhysRev.36.823)) to generate temporally correlated exploration for exploration efficiency in physical control problems with inertia.
 
 Related parameters:
 ```
