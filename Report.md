@@ -50,15 +50,6 @@ EPSILON = 1.0           # explore->exploit noise process added to act step
 EPSILON_DECAY = 1e-6    # decay rate for noise process
 ```
 
-### Learning Interval
-The learning timestep interval was set to 20 to avoid slow learning. The algorithm samples experiences from the buffer and learns 10 times.
-
-Related parameters:
-```
-LEARN_EVERY = 20        # learning timestep interval
-LEARN_NUM = 10          # number of learning passes
-```
-
 ### Model architecture
 Both the actor and critic networks have two fully connected hidden layers, the first layer with 512 nodes and the second layer with 256 nodes. The actor network uses the tanh() activation function to limit all actions within the [-1, +1] range. When updating the critic network, it uses gradient clipping to place an upper limit on the size of the parameter updates.
 
