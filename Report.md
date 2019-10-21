@@ -33,7 +33,7 @@ TAU = 1e-3 # for soft update of target parameters
 ### Batch normalization
 When learning from low dimensional feature vector observations, the different components of the observation may have different physical units (for example, positions versus velocities) and the ranges may vary across environments. This can make it difficult for the network to learn effectively and may make it difficult to find hyper-parameters which generalise across environments with different scales of state values.
 
-The DDPG algorithm addresses this issue by adapting a recent technique from deep learning called batch normalization [Ioffe and Szegedy, 2015]( https://arxiv.org/abs/1502.03167.pdf). This technique normalizes each dimension across the samples in a minibatch to have unit mean and variance. In addition, it maintains a running average of the mean and variance to use for normalization during testing (in our case, during exploration or evaluation). In deep networks, it is used to minimize covariance shift during training, by ensuring that each layer receives whitened input. In the low-dimensional case, we used batch normalization on the state input and all layers of the mu network and all layers of the Q network prior to the action input. 
+The DDPG algorithm addresses this issue by adapting a recent technique from deep learning called batch normalization ([Ioffe and Szegedy, 2015](https://arxiv.org/abs/1502.03167.pdf)). This technique normalizes each dimension across the samples in a minibatch to have unit mean and variance. In addition, it maintains a running average of the mean and variance to use for normalization during testing (in our case, during exploration or evaluation). In deep networks, it is used to minimize covariance shift during training, by ensuring that each layer receives whitened input. In the low-dimensional case, we used batch normalization on the state input and all layers of the mu network and all layers of the Q network prior to the action input. 
 
 Related parameters:
 ```
@@ -50,7 +50,7 @@ EPSILON = 1.0           # explore->exploit noise process added to act step
 EPSILON_DECAY = 1e-6    # decay rate for noise process
 ```
 
-### Learning Interval [(code)](https://github.com/ashikagah/DRLND_Continuous_Control/blob/master/ddpg_agent.py)
+### Learning Interval
 The learning timestep interval was set to 20 to avoid slow learning. The algorithm samples experiences from the buffer and learns 10 times.
 
 Related parameters:
