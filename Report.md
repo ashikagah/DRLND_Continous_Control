@@ -60,8 +60,7 @@ LEARN_NUM = 10          # number of learning passes
 ```
 
 ### Model architecture
-
-Gradient clipping was used to place an upper limit on the size of the parameter updates.
+Both the actor and critic networks have two fully connected hidden layers, the first layer with 512 nodes and the second layer with 256 nodes. The actor network uses the tanh() activation function to limit all actions within the [-1, +1] range. When updating the critic network, it uses gradient clipping to place an upper limit on the size of the parameter updates.
 
 ## Plot of Rewards
 <img src="plot.png" width="70%" align="top-left" alt="" title="Final Result" />
