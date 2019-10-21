@@ -1,5 +1,7 @@
 # Continuous Control
 
+<img src="balls.png" width="70%" align="top-left" alt="" title="Final Result" />
+
 ## Goal
 To build a deep reinforcement learning agent that controls 20 robotic arms to maintain contact with the green balls. A reward of +0.1 is provided for each timestep when the agent's hand is in contact with the green balls. The environment is considered solved when the agents achive a mean score of +30.
 
@@ -37,7 +39,7 @@ Batch normalization was used at the outputs of the first fully-connected layers 
 Experience replay was also implemented.
 
 ## Plot of Rewards
-<img src="results.png" width="70%" align="top-left" alt="" title="Final Result" />
+<img src="plot.png" width="70%" align="top-left" alt="" title="Final Result" />
 
 ## Ideas for Future Work
 Other algorithms such as [Asynchronous Advantage Actor-Critic (A3C)](https://arxiv.org/abs/1611.02247), [Advantage Actor-Critic (A2C)](https://openai.com/blog/baselines-acktr-a2c/), or [Generalized Advantage Estimation (GAE)](https://arxiv.org/abs/1506.02438) should be explored.
